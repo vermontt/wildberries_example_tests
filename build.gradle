@@ -10,6 +10,8 @@ repositories {
     mavenCentral()
 }
 
+def junitVersion = "5.8.0"
+
 compileJava {
     options.encoding = 'UTF-8'
 }
@@ -19,8 +21,8 @@ compileTestJava {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1',
-            'com.codeborne:selenide:5.20.3',
+    testImplementation "org.junit.jupiter:junit-jupiter:$junitVersion",
+            'com.codeborne:selenide:6.12.3',
             'com.github.javafaker:javafaker:1.0.2',
             'org.aeonbits.owner:owner:1.0.12',
             'io.qameta.allure:allure-selenide:2.20.1'
@@ -32,5 +34,5 @@ test {
 }
 
 tasks.withType(Test) {
-    systemProperty("host", System.getProperty("host", "local"))
+    systemProperty("host", System.getProperty("host", "remote"))
 }
