@@ -26,18 +26,19 @@ public class SearchTests extends BaseTest {
         mainPage.inputSearchWord(searchWord);
         sleep(1000);
 
-        Allure.step("Проверка на соответствие введеннму слову", () ->
+        Allure.step("Проверка на соответствие введенному слову", () ->
                 assertThat(searchPage.getProductName()).contains(searchWord));
     }
 
     @Test
-    void test2() {
+    @Story("Проверка пагинации страниц поиска")
+    void paginationTest() {
+        mainPage.openPage();
+        sleep(1000);
+        mainPage.inputSearchWord("мячи");
+        sleep(1000);
 
+        searchPage.assertFirstPagePagination("1");
+        assertThat(searchPage.assertAllPagesPagination()).isEqualTo("7");
     }
-
-    @Test
-    void test3() {
-
-    }
-
 }

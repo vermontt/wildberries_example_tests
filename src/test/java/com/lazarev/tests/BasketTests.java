@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.sleep;
+import static com.codeborne.selenide.Selenide.title;
+import static com.lazarev.data.TestData.emptyBasketText;
 import static io.qameta.allure.Allure.step;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
@@ -39,14 +41,16 @@ public class BasketTests extends BaseTest {
     }
 
     @Test
-    void test2() {
-
+    @Story("Проверка пустой корзины")
+    void emptyBasketTest() {
+        basketPage.openBasketPage();
+        sleep(1000);
+        basketPage.assertTextEmptyBasket(emptyBasketText);
     }
 
     @Test
-    void test3() {
-
+    void titleTest() {
+        basketPage.openBasketPage();
+        assertThat(title()).contains("модный интернет магазин");
     }
-
-
 }
