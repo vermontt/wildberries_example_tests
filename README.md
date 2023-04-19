@@ -28,7 +28,7 @@ Java 17
 для запуска таски смоук тестов
 
 
-### Example allure report
+### Example allure report :ghost:
 
 
 <img src="https://github.com/vermontt/wildberries_example_tests/blob/master/notifications/%D0%A1%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%20900.jpg" width="850" height="440"/>
