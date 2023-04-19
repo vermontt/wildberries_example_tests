@@ -16,6 +16,7 @@ public class BasketTests extends BaseTest {
 
     @Test
     @Tag("smoke")
+    @TmsLink("1")
     @DisplayName("WB-TC-1: Проверка добавления товара в корзину")
     void addBasketTest() {
         mainPage.openPage();
@@ -46,6 +47,7 @@ public class BasketTests extends BaseTest {
     }
 
     @Test
+    @TmsLink("3")
     @DisplayName("WB-TC-3: Проверка тайтла страницы Корзина")
     void titleTest() {
         basketPage.openBasketPage();

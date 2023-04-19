@@ -4,6 +4,7 @@ package com.lazarev.tests;
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
+import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -15,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ContentTests extends BaseTest {
 
     @Test
+    @TmsLink("4")
     @DisplayName("WB-TC-4: Проверка содержания списка категорий")
     void categoriesTest() {
         mainPage.openPage();
@@ -23,6 +25,7 @@ public class ContentTests extends BaseTest {
     }
 
     @Test
+    @TmsLink("5")
     @DisplayName("WB-TC-5: Проверка текста иконки корзины")
     void basketTextIconTest() {
         mainPage.openPage();
@@ -30,6 +33,7 @@ public class ContentTests extends BaseTest {
     }
 
     @Test
+    @TmsLink("4")
     @DisplayName("WB-TC-6: Проверка перехода по правильному URL в футере")
     void urlTest() {
         mainPage.openPage();
