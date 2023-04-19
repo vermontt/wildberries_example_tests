@@ -18,3 +18,7 @@ Java 17
 
 * `local` - стоит по умолчанию, можно не указывать
 * `remote` - удаленный Selenoid
+
+`./gradlew clean smoke_tests`
+
+для запуска таски смоук тестов
