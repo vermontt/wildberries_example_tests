@@ -1,7 +1,7 @@
 package com.lazarev.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
@@ -15,11 +15,13 @@ public class BasketPage {
         return counterProductBasket.hover().getAttribute("data-count");
     }
 
+    @Step("Открыть страницу Корзина")
     public void openBasketPage() {
         open("lk/basket");
         sleep(1000);
     }
 
+    @Step("Проверка тайтла страницы")
     public void assertTextEmptyBasket(String data) {
         elementEmptyBasket.shouldHave(text(data));
     }

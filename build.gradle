@@ -34,6 +34,14 @@ test {
     useJUnitPlatform()
 }
 
+//Переменная окружения, по умолчанию выставления locale
 tasks.withType(Test) {
     systemProperty("host", System.getProperty("host", "local"))
+}
+
+//Task для запуска смоук тестов
+task smoke_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags "smoke"
+    }
 }

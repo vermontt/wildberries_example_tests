@@ -1,5 +1,8 @@
 package com.lazarev.data;
 
+/**
+ * Класс с данными для тестов
+ */
 public class TestData {
 
     public static final String URLFooter = "https://www.wildberries.ru/services/kak-sdelat-zakaz";

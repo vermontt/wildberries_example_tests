@@ -1,6 +1,7 @@
 package com.lazarev.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class MainPage {
     private final List<SelenideElement> categoriesList = $$x("//li[@class=\"menu-burger__main-list-item" +
             " j-menu-main-item menu-burger__main-list-item--subcategory\"]");
 
+    @Step("Открыть главную страницу")
     public void openPage() {
         open("");
         sleep(1000);
@@ -30,6 +32,7 @@ public class MainPage {
 
     public void clickMenuItems() {
         categoriesItem.click();
+        sleep(1000);
     }
 
     public String sizeListCategories() {
