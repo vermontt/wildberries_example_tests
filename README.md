@@ -31,7 +31,7 @@ Java 17
 ### Examples allure report :ghost:
 
 
-<img src="https://github.com/vermontt/wildberries_example_tests/blob/master/notifications/Screenshot_003341.jpg" width="870" height="470"/>
+<img src="https://github.com/vermontt/wildberries_example_tests/blob/master/notifications/Screenshot_003341.jpg" width="910" height="480"/>
 
 <img src="https://github.com/vermontt/wildberries_example_tests/blob/master/notifications/Screenshot_003342.jpg" width="300" height="540"/>
 
