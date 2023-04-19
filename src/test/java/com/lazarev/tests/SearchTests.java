@@ -1,9 +1,6 @@
 package com.lazarev.tests;
 
-import io.qameta.allure.Allure;
-import io.qameta.allure.Feature;
-import io.qameta.allure.TmsLink;
-import io.qameta.allure.TmsLinks;
+import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -21,7 +18,8 @@ public class SearchTests extends BaseTest {
             "Джинсы"
     })
     @ParameterizedTest(name = "\"{0}\"")
-    @TmsLinks({@TmsLink("7.1"), @TmsLink("7.2"), @TmsLink("7.3")})
+    @Owner("Лазарев И.И.")
+    @TmsLinks({@TmsLink("17500"), @TmsLink("17500"), @TmsLink("17500")})
     @DisplayName("WB-TC-7: Проверка поисковой строки по слову")
     void searchTest(String searchWord) {
         mainPage.openPage();
@@ -34,7 +32,8 @@ public class SearchTests extends BaseTest {
     }
 
     @Test
-    @TmsLink("8")
+    @Owner("Бондарев А.А.")
+    @TmsLink("17501")
     @DisplayName("WB-TC-8: Проверка пагинации страниц поиска")
     void paginationTest() {
         mainPage.openPage();

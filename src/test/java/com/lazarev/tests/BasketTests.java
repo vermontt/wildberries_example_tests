@@ -1,6 +1,7 @@
 package com.lazarev.tests;
 
 import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import io.qameta.allure.TmsLink;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -16,7 +17,8 @@ public class BasketTests extends BaseTest {
 
     @Test
     @Tag("smoke")
-    @TmsLink("1")
+    @Owner("Рудой И.А.")
+    @TmsLink("17494")
     @DisplayName("WB-TC-1: Проверка добавления товара в корзину")
     void addBasketTest() {
         mainPage.openPage();
@@ -39,7 +41,8 @@ public class BasketTests extends BaseTest {
     }
 
     @Test
-    @TmsLink("2")
+    @Owner("Рудой И.А.")
+    @TmsLink("17495")
     @DisplayName("WB-TC-2: Проверка содержания пустой корзины")
     void emptyBasketTest() {
         basketPage.openBasketPage();
@@ -47,7 +50,8 @@ public class BasketTests extends BaseTest {
     }
 
     @Test
-    @TmsLink("3")
+    @Owner("Карабашев П.Ю.")
+    @TmsLink("17496")
     @DisplayName("WB-TC-3: Проверка тайтла страницы Корзина")
     void titleTest() {
         basketPage.openBasketPage();
