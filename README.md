@@ -1,4 +1,10 @@
-## The project was created to demonstrate working with tools:
+# Tests For `Wildberries.ru`
+
+### Configuration
+
+Java 17
+
+### The project was created to demonstrate working with tools:
 - Selenide
 - Gradle
 - Owner
