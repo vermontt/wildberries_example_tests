@@ -18,8 +18,8 @@ public class SearchTests extends BaseTest {
             "Майка",
             "Джинсы"
     })
-    @ParameterizedTest
-    @DisplayName("WB-TC-7: Проверка поисковой строки")
+    @ParameterizedTest(name = "\"{0}\"")
+    @DisplayName("WB-TC-7: Проверка поисковой строки по слову")
     void searchTest(String searchWord) {
         mainPage.openPage();
         mainPage.inputSearchWord(searchWord);
