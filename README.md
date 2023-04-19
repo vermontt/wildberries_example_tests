@@ -6,10 +6,14 @@ Java 17
 
 ### The project was created to demonstrate working with tools:
 - Selenide
+- Selenoid
 - Gradle
 - Owner
 - Allure
-- JUnit
+- JUnit5
+- Pattern PageObject
+- AssertJ
+- Notification telegram bot
 
 ### Run
 `./gradlew clean test -Dhost=local`
