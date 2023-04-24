@@ -1,4 +1,4 @@
-# Tests For `Wildberries.ru`
+# Tests for `Wildberries.ru`
 
 ### Configuration
 
